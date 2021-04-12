@@ -12,6 +12,11 @@ h1 {
   font-weight: 900;
 }
 
+ul li {
+  list-style: none;
+  display: inline;
+}
+
 /* utility */
 .container {
   width: 60%;
@@ -129,6 +134,7 @@ header {
 
 .numbers_text p:nth-child(2) {
   font-weight: 500;
+  font-size: 1.3em;
 }
 
 .numbers_text p span {
@@ -156,6 +162,11 @@ button a {
   align-items: center;
 }
 
+.numbers_info {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .numbers_item {
   text-align: center;
   padding: 15px 0;
@@ -166,13 +177,63 @@ button a {
   font-size: 2.5em;
   color: #2e3338;
 }
+
+/* terza sezione */
+
 .images {
   border-bottom: 1px solid lightgrey;
 }
 
-ul li {
-  list-style: none;
-  display: inline;
+.images_content {
+  padding-right: 15px;
+  width: calc(100% / 3);
+}
+
+.images_img img {
+  width: 90%;
+  margin: 10px 0;
+}
+
+.images_content p:nth-child(2) {
+  color: #1ab895;
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+
+.images_content h4 {
+  color: #2e3338;
+  margin: 10px 0;
+}
+
+.images_content p:nth-child(4) {
+  color: #616b72;
+  font-size: 0.7em;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.images_content p a {
+  text-decoration: none;
+  color: #1ab895;
+  font-weight: 600;
+  font-size: 0.7em;
+}
+
+.logos .container {
+  position: relative;
+}
+
+.layover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffffcf;
+}
+
+.logos img {
+  width: calc(100% / 7 - 5px);
 }
 
 /*footer*/
@@ -193,11 +254,6 @@ footer {
 /* eliminare */
 header {
   background-color: lightgrey;
-}
-
-.numbers_info {
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .quotes {
