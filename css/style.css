@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -116,12 +116,56 @@ header {
 /* seconda sezione */
 .numbers {
   width: 100%;
+  background-image: url("../img/parallax-corporate-9-1.jpg");
+  background-position-y: 20%;
+  background-size: cover;
+  height: 40vh;
 }
 
-.numbers_text {
-  width: 70%;
+.numbers_text p:first-child {
+  color: #1fb58c;
+  font-size: 0.7em;
 }
 
+.numbers_text p:nth-child(2) {
+  font-weight: 500;
+}
+
+.numbers_text p span {
+  font-weight: 900;
+}
+
+.numbers_text p:nth-child(3) {
+  color: #616b72;
+  padding: 10px 0;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: 2px solid #1fb58c;
+}
+button a {
+  text-decoration: none;
+  color: #1fb58c;
+}
+
+.numbers .container {
+  height: 100%;
+  align-items: center;
+}
+
+.numbers_item {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.numbers_item span {
+  font-weight: 900;
+  font-size: 2.5em;
+  color: #2e3338;
+}
 .images {
   border-bottom: 1px solid lightgrey;
 }
@@ -149,11 +193,6 @@ footer {
 /* eliminare */
 header {
   background-color: lightgrey;
-}
-
-.numbers {
-  background-color: lightgrey;
-  height: 30vh;
 }
 
 .numbers_info {
