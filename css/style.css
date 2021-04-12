@@ -88,18 +88,32 @@ header {
 .intro_text p:nth-child(2) {
   font-size: 1.2em;
   padding: 15px 0;
+  line-height: 35px;
 }
 
-.intro_text p:nth-child(3) {
+.intro_text p:nth-child(3),
+.intro_item p {
   color: #616b72;
-  font-size: 0.8em;
-  padding: 15px 0;
+  font-size: 0.9em;
+  padding: 10px 0;
+  line-height: 30px;
 }
 
-.intro_info {
-  display: flex;
+.intro_item {
+  text-align: center;
 }
 
+.intro_item i {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #1fb58c;
+}
+
+.intro_item h3 {
+  margin: 10px 0;
+}
+
+/* seconda sezione */
 .numbers {
   width: 100%;
 }
