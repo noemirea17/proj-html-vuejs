@@ -236,6 +236,66 @@ button a {
   width: calc(100% / 7 - 5px);
 }
 
+/* quarta sezione */
+
+.quotes {
+  width: 100%;
+  background-color: #e3e9eb;
+  text-align: center;
+}
+
+.quotes_img img {
+  border-radius: 100%;
+  width: 70px;
+  margin: 30px;
+}
+
+.quotes_text {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Playfair Display", serif;
+  font-size: 1.3em;
+}
+
+.quotes_text i {
+  font-size: 1.5em;
+}
+
+.quotes_text i:first-child {
+  position: absolute;
+  top: -15px;
+  left: -40px;
+}
+
+.quotes_text i:nth-child(2) {
+  position: absolute;
+  bottom: 30px;
+  right: -50px;
+}
+
+.quotes_text p:nth-child(2) {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 0.7em;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
+.quotes_menu i {
+  font-size: 0.6em;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.quotes_menu i:first-child {
+  color: #1ab895;
+}
+
+.quotes_menu i:not(i:first-child) {
+  color: #bcbcbc;
+}
+
 /*footer*/
 
 footer {
@@ -253,11 +313,6 @@ footer {
 
 /* eliminare */
 header {
-  background-color: lightgrey;
-}
-
-.quotes {
-  width: 100%;
   background-color: lightgrey;
 }
 
