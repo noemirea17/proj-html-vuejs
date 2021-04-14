@@ -18,28 +18,25 @@
 <body>
     <div id="root" class="full_container">
         <!-- inizio header -->
-        <!-- <div id="head" class="full_container"> -->
-            <header>
-    
-                <div class="logo">
-                    <img :src="header.logo" alt="">
-        
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li v-for="option in header.options"><a href="">{{option}}</a></li>
-                    </ul>
-                    
-        
-                </div>
-                <div class="social">
-                    <ul>
-                        loghi social
-                    </ul>
-                </div>
-            </header>
-        <!-- </div> -->
-    
+        <header>
+            <div class="logo">
+                <img :src="header.logo" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li v-for="option in header.options"><a href="">{{option}}</a></li>
+                </ul>
+            </div>
+            <div>
+                <!-- <li v-for="social in header.socials"><i class="fab fa-{{social}}"></i></li> -->
+                <ul>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-linkedin-in"></i></li>
+                </ul>
+
+            </div>
+        </header>
         <!-- fine header -->
         <!-- inizio main -->
         <main>
@@ -182,21 +179,29 @@
         <!-- inizio footer -->
         <footer>
             <div class="footer_social">
-                <p class="padding">lorem ipsum</p> 
-            </div>
-            <div class="footer_text container">
                 <ul>
-                    <li>lorem</li>
-                    <li>lorem</li>
-                    <li>lorem</li>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-linkedin-in"></i></li>
                 </ul>
-    
+            </div>
+            <div class="footer_text flex">
+                <ul>
+                    <li><i class="fas fa-search-location"></i>{{footer.contacts.address}}</li>
+                    <li><i class="fab fa-whatsapp"></i> {{footer.contacts.phone}}</li>
+                    <li><i class="far fa-envelope"></i>{{footer.contacts.email}}</li>
+                </ul>
+                <p><i class="far fa-copyright"></i>{{footer.copyright}}</p>
+            </div>
+            <div class="hidden_menu">
+                <i class="fas fa-chevron-up"></i>
             </div>
     
         </footer>
+        <!-- fine footer -->
 
     </div>
-    <!-- fine footer -->
+    <!-- fine full-container -->
     <script src="js/main.js"></script>
   
 </body>

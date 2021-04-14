@@ -1,21 +1,5 @@
 Vue.config.devtools = true;
 
-// var header = new Vue({
-//   el: "#head",
-//   data: {
-//     logo: "img/logo-corporate-9.png",
-//     options: [
-//       "HOME",
-//       "ELEMENTS",
-//       "FEATURES",
-//       "PAGES",
-//       "PORTFOLIO",
-//       "BLOG",
-//       "SHOP",
-//     ],
-//   },
-// });
-
 var app = new Vue({
   el: "#root",
   data: {
@@ -30,7 +14,15 @@ var app = new Vue({
         "BLOG",
         "SHOP",
       ],
+      socials: ["facebook-f", "twitter", "linkedin-in"],
     },
-    footer: {},
+    footer: {
+      contacts: {
+        address: "1234, Street Name, City Name",
+        phone: "(800)123-4567",
+        email: "mail@example.com",
+      },
+      copyright: "Copyright 2020. All right reserved",
+    },
   },
 });

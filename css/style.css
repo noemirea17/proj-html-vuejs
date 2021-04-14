@@ -58,6 +58,10 @@ header .menu a {
   color: black;
 }
 
+header i {
+  padding: 5px;
+}
+
 /* main */
 
 .jumbotron {
@@ -314,19 +318,58 @@ button a {
 
 footer {
   width: 100%;
+  background-color: #20242d;
 }
 
 .footer_social {
   text-align: center;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #807f70;
+}
+
+.footer_social i {
+  background-color: #2e3338;
+  color: white;
+  font-size: 0.8em;
+  padding: 15px;
+  border-radius: 100px;
+  margin: 50px 0;
+  cursor: pointer;
 }
 
 .footer_text {
-  padding: 15px 0;
+  justify-content: space-around;
+  padding: 35px 0;
+  color: #bcbcbc;
+  font-size: 0.8em;
 }
 
-/* eliminare */
+.footer_text li {
+  margin-right: 10px;
+}
 
-footer {
-  background-color: blue;
+.footer_text ul li i {
+  color: #1fb58c;
+  padding: 0 5px;
+}
+
+.footer_text p,
+.footer_text i {
+  color: #807f70;
+}
+
+.footer_text i {
+  padding: 5px;
+}
+
+.hidden_menu {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  background-color: #2e3338;
+  padding: 10px;
+  color: #bcbcbc;
+  cursor: pointer;
 }
