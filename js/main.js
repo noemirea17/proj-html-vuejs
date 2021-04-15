@@ -25,4 +25,9 @@ var app = new Vue({
       copyright: "Copyright 2020. All right reserved",
     },
   },
+  methods: {
+    getSocialIcon(suffix) {
+      return `fab fa-${suffix}`;
+    },
+  },
 });

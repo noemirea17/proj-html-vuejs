@@ -17,6 +17,15 @@ ul li {
   display: inline;
 }
 
+a {
+  text-decoration: none;
+}
+
+.footer_social i:hover,
+.header_social i:hover {
+  color: #1fb58c;
+}
+
 /* utility */
 .container {
   width: 60%;
@@ -49,17 +58,35 @@ header {
 
 header .logo img {
   height: 8vh;
+  margin-right: 15px;
+}
+
+header .logo {
+  border-right: 1px solid #e3e9eb;
 }
 
 header .menu a {
-  text-decoration: none;
   padding: 10px;
   font-weight: 700;
   color: black;
 }
+header .menu a:hover {
+  color: #1ab895;
+}
+
+.header_social {
+  align-items: center;
+  height: 90%;
+  border-left: 1px solid #e3e9eb;
+}
+
+.header_social ul {
+  margin-left: 10px;
+}
 
 header i {
-  padding: 5px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 /* main */
@@ -169,10 +196,16 @@ button {
   margin-top: 10px;
   background-color: transparent;
   border: 2px solid #1fb58c;
+  cursor: pointer;
 }
 button a {
-  text-decoration: none;
   color: #1fb58c;
+}
+button:hover {
+  background-color: #1fb58c;
+}
+button:hover a {
+  color: white;
 }
 
 .numbers .container {
@@ -199,7 +232,7 @@ button a {
 /* terza sezione */
 
 .images {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #e3e9eb;
 }
 
 .images_content {
@@ -231,7 +264,6 @@ button a {
 }
 
 .images_content p a {
-  text-decoration: none;
   color: #1ab895;
   font-weight: 600;
   font-size: 0.7em;
@@ -326,6 +358,10 @@ footer {
   border-bottom: 1px solid #807f70;
 }
 
+.footer_social li {
+  margin: 0 5px;
+}
+
 .footer_social i {
   background-color: #2e3338;
   color: white;
@@ -339,12 +375,18 @@ footer {
 .footer_text {
   justify-content: space-around;
   padding: 35px 0;
-  color: #bcbcbc;
   font-size: 0.8em;
+}
+
+.footer_text li a {
+  color: #bcbcbc;
 }
 
 .footer_text li {
   margin-right: 10px;
+}
+.footer_text li a:hover {
+  color: #858a8d;
 }
 
 .footer_text ul li i {
@@ -372,4 +414,7 @@ footer {
   padding: 10px;
   color: #bcbcbc;
   cursor: pointer;
+}
+.hidden_menu:hover {
+  color: #1fb58c;
 }

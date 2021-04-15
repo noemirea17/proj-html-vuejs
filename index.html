@@ -27,14 +27,10 @@
                     <li v-for="option in header.options"><a href="">{{option}}</a></li>
                 </ul>
             </div>
-            <div>
-                <!-- <li v-for="social in header.socials"><i class="fab fa-{{social}}"></i></li> -->
+            <div class="header_social flex">
                 <ul>
-                    <li><i class="fab fa-facebook-f"></i></li>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-linkedin-in"></i></li>
+                    <li v-for="social in header.socials"><i :class="getSocialIcon(social)"></i></li>
                 </ul>
-
             </div>
         </header>
         <!-- fine header -->
@@ -180,16 +176,14 @@
         <footer>
             <div class="footer_social">
                 <ul>
-                    <li><i class="fab fa-facebook-f"></i></li>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-linkedin-in"></i></li>
+                    <li v-for="social in header.socials"><i :class="getSocialIcon(social)"></i></li>
                 </ul>
             </div>
             <div class="footer_text flex">
                 <ul>
-                    <li><i class="fas fa-search-location"></i>{{footer.contacts.address}}</li>
-                    <li><i class="fab fa-whatsapp"></i> {{footer.contacts.phone}}</li>
-                    <li><i class="far fa-envelope"></i>{{footer.contacts.email}}</li>
+                    <li><i class="fas fa-search-location"></i><a href=""> {{footer.contacts.address}}</a></li>
+                    <li><i class="fab fa-whatsapp"></i><a href="">{{footer.contacts.phone}}</a></li>
+                    <li><i class="far fa-envelope"></i><a href="">{{footer.contacts.email}}</a> </li>
                 </ul>
                 <p><i class="far fa-copyright"></i>{{footer.copyright}}</p>
             </div>
